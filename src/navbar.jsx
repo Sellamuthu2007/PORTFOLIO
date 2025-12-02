@@ -2,14 +2,14 @@ import {useState,useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import './index.css'
 
-export default function Homepage(){
+export default function Navbar(){
     const navigate = useNavigate();
 
     return (
         
         <>
             <nav className="nav1">
-                <div>
+                <div style = {{"borderRadius" : "100px"}}>
                     <h3 className="logo">Sellamuthu R</h3>
                 </div>
                 <div className='menu'>

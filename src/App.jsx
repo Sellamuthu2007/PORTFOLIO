@@ -1,9 +1,9 @@
-import Homepage from './homepage'
+import Navbar from "./navbar"
 
 function App() {
   return (
     <>
-      <Homepage/>
+      <Navbar/>
     </>
   )
 }
