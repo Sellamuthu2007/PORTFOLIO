@@ -12,7 +12,7 @@ export default function Navbar(){
                 <div style = {{"borderRadius" : "100px"}}>
                     <h3 className="logo">Sellamuthu R</h3>
                 </div>
-                <div className='menu'>
+                 <div className='menu'>
                     <ul>
                         <li><a onClick={()=>navigate('/')}>Home</a></li>
                         <li><a onClick={()=>navigate('/projects')}>Projects</a></li>

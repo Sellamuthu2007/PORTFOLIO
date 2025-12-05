@@ -1,1 +1,112 @@
- 
+.container:hover{
+    border : 3px white solid;
+    border-radius : 50px;
+}
+
+/* Wrapper */
+.projects-wrapper {
+  padding: 50px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Title */
+.projects-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  position: relative;
+}
+
+.projects-title::after {
+  content: "";
+  width: 120px;
+  height: 3px;
+  background: #00e7ff;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+  animation: titleGlow 2s infinite alternate;
+}
+
+@keyframes titleGlow {
+  from {
+    box-shadow: 0 0 10px #00e7ff;
+  }
+  to {
+    box-shadow: 0 0 25px #00e7ff;
+  }
+}
+
+/* Grid layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  padding: 20px;
+}
+
+/* Card styles */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  transition: 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Neon border effect */
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 2px;
+  background: linear-gradient(
+    45deg,
+    #00eaff,
+    #ff00e6,
+    #00ff95,
+    #00eaff
+  );
+  opacity: 0;
+  transition: 0.4s;
+  z-index: -1;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+  filter: blur(6px);
+}
+
+/* Text styling */
+.project-card h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #54f7ff;
+}
+
+.project-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+.tech {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 13px;
+  padding: 6px 12px;
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  color: #00eaff;
+}
