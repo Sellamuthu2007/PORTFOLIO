@@ -1,4 +1,20 @@
- 
+ *{
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     background: linear-gradient(
+        180deg,
+        #0f0a25,   /* top purple tint */
+        #0c1022,   /* center deep blue */
+        #0d1228    /* bottom navy */
+    ); 
+ }
+ img{
+    cursor : pointer;
+    
+ }
+ img:hover{
+    transform : scale(2);
+    transition : 0.3s ease;
+ }
 .nav1{
     background-color:black;
     color : white;
@@ -35,7 +51,7 @@
      border-radius: 120px;
     text-decoration : none;
     color : white;
-    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     
     font-size : 20px;
     cursor : pointer;
 }
@@ -45,12 +61,7 @@
     width : 800px;
 }
 .homePage-top{ 
-    background: linear-gradient(
-        180deg,
-        #0f0a25,   /* top purple tint */
-        #0c1022,   /* center deep blue */
-        #0d1228    /* bottom navy */
-    );  
+      
     height : 100vh;  
     width : 100%;
     color: white;
@@ -58,12 +69,7 @@
     flex-direction : row;
 }
 .homePage-left{
-    background: linear-gradient(
-        180deg,
-        #0f0a25,   /* top purple tint */
-        #0c1022,   /* center deep blue */
-        #0d1228    /* bottom navy */
-    );  
+    
     background-color:white;
     font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left : 30px;
@@ -93,34 +99,19 @@
 
     /* Main Glow Layer */
     box-shadow:
-        0 0 40px rgba(255, 255, 255, 0.15),
-        0 0 100px rgba(80, 102, 255, 0.25),
-        0 0 160px rgba(80, 102, 255, 0.35);
+        0 0 40px #00e7ff
+        0 0 100px #00e7ff
+        0 0 160px #00e7ff;
 
     /* Smooth animation */
-    animation: glowPulse 4s ease-in-out infinite;
+ 
+}
+.homePage-right img:hover{
+    transform: scale(1.05);
+    box-shadow:0 0 25px white;
 }
 
-@keyframes glowPulse {
-    0% {
-        box-shadow:
-            0 0 30px rgba(255, 255, 255, 0.15),
-            0 0 80px rgba(80, 102, 255, 0.25),
-            0 0 140px rgba(80, 102, 255, 0.35);
-    }
-    50% {
-        box-shadow:
-            0 0 60px rgba(255, 255, 255, 0.18),
-            0 0 130px rgba(80, 102, 255, 0.30),
-            0 0 200px rgba(80, 102, 255, 0.45);
-    }
-    100% {
-        box-shadow:
-            0 0 30px rgba(255, 255, 255, 0.15),
-            0 0 80px rgba(80, 102, 255, 0.25),
-            0 0 140px rgba(80, 102, 255, 0.35);
-    }
-}
+ 
 .icons{
     margin-top : 50px;
     font-size : 20px;
@@ -168,3 +159,43 @@
     width : 450px;
     
 }
+.hackathonPage{
+    margin-left : 400px; 
+    margin-right : 400px;
+    margin-top : 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    color : white;
+}
+.hackathonPage div{
+    border-radius : 20px;
+}
+
+.hackathonPage-box{
+    border-radius : 20px;
+    height : 300px;
+    margin-top: 30px;
+     background: linear-gradient(
+        180deg,
+        #0f0a25,   /* top purple tint */
+        #0c1022,   /* center deep blue */
+        #0d1228    /* bottom navy */
+    ); 
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #00e7ff;
+    cursor : pointer;
+    
+}
+.hackathonPage-box:hover{
+    box-shadow: 0 0 30px #00e7ff;
+    transform: scale(1.05);
+}
+.hackathonPage-box div{
+    margin-left  : 10px;
+    margin-top  : 10px;
+}
+
+ 
+
