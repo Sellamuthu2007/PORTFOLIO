@@ -6,6 +6,7 @@ import Projects from './projects.jsx';
 import Homepage from './home.jsx';
 import Notfound from './notfound.jsx';
 import Achievement from './achievements.jsx';
+import Educations from './educations.jsx';
  
 const urls = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const urls = createBrowserRouter([
   {
     path : '/hackathons',
     element : <Achievement/>
+  },
+  {
+    path : '/educations',
+    element : <Educations/>
   }
 ])
 createRoot(document.getElementById('root')).render(

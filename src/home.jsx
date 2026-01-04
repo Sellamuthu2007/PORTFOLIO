@@ -37,9 +37,11 @@ export default function Homepage(){
             <div><Navbar/></div>
             <div>
                 <div className='homePage-top'>
-                    <div className='homePage-left'>
+                    <div className='homePage-left'
+                        style = {{"marginTop" : "160px"}}
+                    >
                         <motion.h2
-                            initial = {{opacity : 0 , x : 20}}
+                            initial = {{opacity : 0 , x : 10}}
                             animate = {{opacity : 1, x: 0}}
                             transition = {{
                                 duration: 0.6,
@@ -83,9 +85,9 @@ export default function Homepage(){
                                 target = "_blank"
                                 className="btn btn-primary">Resume</a>
                             </div>
-                            <div src="https://www.linkedin.com/in/sellamuthu-ramu-3b3390327"><i class="bi bi-linkedin"></i> LinkedIn</div>
-                            <div src="https://github.com/Sellamuthu2007"><i class="bi bi-github"></i> Github</div>
-                            <div  href="https://mail.google.com/mail/?view=cm&fs=1&to=krssellamuthu2007@gmail.com"><i class="bi bi-envelope"></i> Email</div>
+                            <div><a class="bi bi-linkedin" style={{"color":"white"}} href = "https://www.linkedin.com/in/sellamuthu-ramu-3b3390327"></a> LinkedIn</div>
+                            <div><a class="bi bi-github" style={{"color":"white"}} href="https://github.com/Sellamuthu2007"></a> Github</div>
+                            <div><a class="bi bi-envelope" style={{"color":"white"}} href="https://mail.google.com/mail/?view=cm&fs=1&to=krssellamuthu2007@gmail.com"></a> Email</div>
                         </motion.div>
                     </div>
                     <div className='homePage-right   rounded-circle'>
@@ -103,25 +105,25 @@ export default function Homepage(){
                 <div className='mass-container'>
                     <div className="container">
                         <div><i class="bi bi-code-slash"></i></div>
-                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio!</p></div>
+                        <div><p>I enjoy transforming ideas into efficient, scalable code. I focus on writing clean logic, optimizing performance, and building solutions that solve real-world problems using modern technologies.</p></div>
                     </div>
                     <div className="container">
                         <div><i class="bi bi-braces"></i></div>
-                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio!</p></div>
+                        <div><p>My academic journey strengthened my foundations in computer science, problem-solving, and system thinking, enabling me to bridge theoretical concepts with practical software development.</p></div>
                     </div>
                     <div className="container">
                         <div><i class="bi bi-journal"></i></div>
-                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio!</p></div>
+                        <div><p>I approach challenges with a structured mindset—analyzing requirements, breaking down problems, and delivering reliable solutions through algorithms and thoughtful design.</p></div>
                     </div>
                 </div>
                 <div className='mass-container'>
                     <div className="container">
                         <div><i class="bi bi-activity"></i></div>
-                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. corporis eaque et. Facere, optio!provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio!</p></div>
+                        <div><p>I am deeply passionate about software engineering, continuously learning new technologies, exploring system architectures, and improving my skills to build impactful digital products.</p></div>
                     </div>
                     <div className="container">
                         <div><i class="bi bi-pencil-square"></i></div>
-                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. corporis eaque et. Facere, optio!provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio!</p></div>
+                        <div><p>Beyond coding, I enjoy exploring technology trends, learning through hands-on projects, and maintaining a balance through creative thinking and personal growth activities.</p></div>
                     </div>
                 </div>
 
