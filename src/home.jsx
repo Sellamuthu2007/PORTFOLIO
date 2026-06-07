@@ -4,7 +4,7 @@ import './index.css'
 import './App.css'
 import { motion } from 'framer-motion'
 import Footer from './footer'
-import person from './assets/person.png'
+import person from './assets/My_Photo.png'
 
 
 export default function Homepage(){
@@ -45,7 +45,7 @@ export default function Homepage(){
                             animate = {{opacity : 1, x: 0}}
                             transition = {{
                                 duration: 0.6,
-                                delay:   0.3, // stagger effect
+                                delay:   0.3, 
                                 type: "spring",
                                 stiffness: 80,
                             }}
