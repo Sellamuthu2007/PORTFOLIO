@@ -46,9 +46,10 @@ export default function Homepage() {
               <div>
                 <TextType
                   text={[
-                    "Hello Everyone.",
-                    "Hello, tech world.",
+                    "Hai Everyone.",
                     "Create, rise and lead.",
+                    "Hello, tech world.",
+                    
                   ]}
                   typingSpeed={75}
                   pauseDuration={1500}
@@ -121,7 +122,7 @@ export default function Homepage() {
               />
             </div>
           </div>
-          <div className="homePage-down">
+          <div className="homePage-down" id="homePage-down">
             <div>
               <h3>About me</h3>
             </div>
@@ -193,6 +194,18 @@ export default function Homepage() {
               </div>
             </div>
           </div>
+          <button
+              type="button"
+              className="scroll-down-btn"
+              onClick={() =>
+                document
+                  .getElementById("homePage-down")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
+              }
+            >
+              Scroll down
+            </button>
+            
         </div>
         <Footer />
       </div>
