@@ -16,13 +16,13 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # Step 2: Set up Node.js (Vite works great with Node 20)
+      # Step 2: Set up Node.js
       - name: Setup Node.js
-        uses: actions/uses/setup-node@v4
+        uses: actions/setup-node@v4  # <-- Fixed this line (removed /uses)
         with:
           node-version: 20
-          cache: 'npm' # Automatically caches node_modules for speedier builds
-
+          cache: 'npm'
+          
       # Step 3: Clean install your project dependencies
       - name: Install Dependencies
         run: npm ci
