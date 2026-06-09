@@ -22,7 +22,12 @@ export default function Homepage() {
         <div>
           <div className="homePage-top">
             <div className="homePage-left" style={{ marginTop: "130px" }}>
-              <div>
+              <motion.div
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x : 0 }}
+                transition={{ duration: 1 }}
+                style={{ marginTop: "20px" }}
+              >
                 <TextType
                   text={[
                     "Hai Everyone.",
@@ -44,11 +49,11 @@ export default function Homepage() {
                   variableSpeedMax={120}
                   cursorBlinkDuration={0.5}
                 />
-              </div>
+              </motion.div>
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1.5 }}
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x : 0 }}
+                transition={{ duration: 1 }}
                 style={{ marginTop: "20px" }}
               >
                 <h2>I'm Sellamuthu R</h2>
@@ -58,9 +63,9 @@ export default function Homepage() {
                 </h4>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 1 }}
                 className="homePage-left-down"
               >
                 <div>
@@ -101,9 +106,9 @@ export default function Homepage() {
             </div>
             <div className="homePage-right   rounded-circle">
               <motion.img
-                initial={{ opacity: 0, x: 20 }}
+                initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 1 }}
                 whileHover={{ scale: 1.05 }}
                 src={person}
                 alt="Image not Found"
