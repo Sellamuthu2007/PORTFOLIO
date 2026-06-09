@@ -1,4 +1,4 @@
-import error from "./assets/error.png";
+import error from "../assets/error.png";
 
 export default function Notfound() {
   return (

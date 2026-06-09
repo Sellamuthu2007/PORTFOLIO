@@ -1,39 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import Footer from "./footer";
-import person from "./assets/My_Photo.png";
-import Navbar from "./navbar";
-import TextType from "../components/TextType";
+import Footer from "../componenets/footer";
+import person from "../assets/My_Photo.png";
+import Navbar from "../componenets/navbar";
+import TextType from "../componenets/reactbits/TextType";
 
-import "./index.css";
-import "./App.css";
-import "../components/TextType.css";
+import "../styles/index.css";
+import "../styles/App.css";
+import "../componenets/reactbits/TextType.css";
 
 export default function Homepage() {
   const navigate = useNavigate();
-  const content = [
-    {
-      id: 1,
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio!",
-    },
-    {
-      id: 2,
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio! ",
-    },
-    {
-      id: 3,
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio!",
-    },
-    {
-      id: 4,
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio!",
-    },
-    {
-      id: 5,
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in provident eius fugit. Amet cum pariatur consectetur in aperiam aut nulla, modi nobis fugiat beatae corporis eaque et. Facere, optio!",
-    },
-  ];
+
   return (
     <>
       <div>

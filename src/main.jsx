@@ -4,10 +4,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
 import Projects from "../src/pages/Projects";
-import Homepage from "./home.jsx";
-import Notfound from "./notfound.jsx";
+import Homepage from "./pages/homePage.jsx";
+import Notfound from "./componenets/notfound.jsx";
 import Achievement from "./achievements.jsx";
 import Educations from "./educations.jsx";
+import Skills from "./pages/Skills.jsx";
 
 const urls = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const urls = createBrowserRouter([
   {
     path: "/educations",
     element: <Educations />,
+  },
+  {
+    path: "/skills",
+    element: <Skills />,
   },
 ]);
 createRoot(document.getElementById("root")).render(

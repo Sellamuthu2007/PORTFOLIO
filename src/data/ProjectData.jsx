@@ -1,4 +1,4 @@
-import bg2 from "../../public/bg2.png"
+import bg2 from "../assets/bg2.png";
 
 export const projectData = [
   {

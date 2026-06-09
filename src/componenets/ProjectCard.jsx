@@ -52,9 +52,8 @@ const ProjectCard = ({
           target="_blank"
           rel="noopener noreferrer"
           className="github-btn"
-          
         >
-          <i className =" bi-github github-btn"></i>
+          <i className=" bi-github github-btn"></i>
           View on GitHub
         </a>
       </div>

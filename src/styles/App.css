@@ -121,8 +121,6 @@
   transition: transform 0.4s ease;
 }
 
-
-
 /* ==================================================
    CONTENT
 ================================================== */
@@ -220,12 +218,9 @@
 
   width: fit-content;
 
-  padding : 5px 10px;
+  padding: 5px 10px;
 
   background: white;
-  
-
- 
 
   border-radius: 14px;
 
@@ -235,7 +230,6 @@
 
   transition: all 0.3s ease;
 }
-
 
 .github-btn:hover {
   transform: translateY(-3px);

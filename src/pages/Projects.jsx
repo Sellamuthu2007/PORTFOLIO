@@ -1,8 +1,8 @@
 import { projectData } from "../data/ProjectData";
 import ProjectCard from "../componenets/ProjectCard";
 import ErrorBoundary from "../componenets/ErrorBoundary";
-import Navbar from "../navbar";
-import Footer from "../footer";
+import Navbar from "../componenets/navbar";
+import Footer from "../componenets/footer";
 
 const Projects = () => {
   return (

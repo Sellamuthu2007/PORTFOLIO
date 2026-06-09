@@ -1,39 +1,11 @@
-import Navbar from "./navbar";
-import "./index.css";
-import Footer from "./footer";
 import { motion } from "framer-motion";
 
+import Navbar from "./componenets/navbar";
+import Footer from "./componenets/footer";
+
+import "./styles/index.css";
+
 export default function Educations() {
-  const data = [
-    {
-      id: 1,
-      type: "Secondary School Leaving Certificates",
-      name: "Vardha Vikas Public School-VVPS(CBSE) school",
-      location: "Perambalur,TamilNadu",
-      Percentage: "84.4%",
-    },
-    {
-      id: 2,
-      type: "Higher Secondary School Certificate",
-      name: "Swami Marticulation and Higher Seconday School",
-      location: "Ariyalur,TamilNadu",
-      Percentage: "96.5%",
-    },
-    {
-      id: 4,
-      type: "Diploma in Computer Application (DCA)",
-      name: "SunTech Computer Center",
-      location: "Ariyalur,TamilNadu",
-      Percentage: "90.5%",
-    },
-    {
-      id: 3,
-      type: "Bachelor of Engineering-B.E(CSE)",
-      name: "Chennai Institute of Technology",
-      location: "Chennai,TamilNadu",
-      Percentage: "8.95",
-    },
-  ];
   return (
     <div>
       <div className="w-20">
