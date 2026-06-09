@@ -1,0 +1,264 @@
+/* ==================================================
+   PROJECTS SECTION
+================================================== */
+
+.projects-wrapper {
+  padding: 80px 30px;
+  min-height: 100vh;
+  color: white;
+}
+
+/* ==================================================
+   PROJECT GRID
+================================================== */
+
+.projects-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(330px, 390px));
+
+  justify-content: center;
+
+  gap: 40px;
+
+  max-width: 1500px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(320px, 390px));
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==================================================
+   CARD
+================================================== */
+
+.project-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(8, 12, 45, 0.95),
+    rgba(5, 7, 30, 0.98)
+  );
+
+  border: 1px solid rgba(0, 229, 255, 0.18);
+
+  backdrop-filter: blur(16px);
+
+  transition: all 0.35s ease;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25),
+    0 0 25px rgba(0, 229, 255, 0.05);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+
+  border-color: #00e5ff;
+
+  box-shadow:
+    0 0 25px rgba(0, 229, 255, 0.15),
+    0 0 60px rgba(0, 229, 255, 0.08);
+}
+
+/* ==================================================
+   ACCENT LINE
+================================================== */
+
+.project-accent {
+  height: 4px;
+
+  width: 100%;
+
+  background: linear-gradient(90deg, #00e5ff, #7d5fff, #00e5ff);
+}
+
+/* ==================================================
+   IMAGE
+================================================== */
+
+.project-image-container {
+  height: 220px;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.project-image-container::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(to top, rgba(5, 7, 30, 0.95), transparent);
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+/* ==================================================
+   CONTENT
+================================================== */
+
+.project-content {
+  padding: 26px;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+
+.project-title {
+  font-size: 2rem;
+
+  font-weight: 700;
+
+  color: white;
+
+  margin-bottom: 16px;
+}
+
+.project-description {
+  color: #d1d5db;
+
+  line-height: 1.8;
+
+  margin-bottom: 24px;
+
+  font-size: 0.98rem;
+}
+
+/* ==================================================
+   SECTION TITLES
+================================================== */
+
+.project-section {
+  margin-bottom: 24px;
+}
+
+.project-section h3 {
+  color: white;
+
+  font-size: 1.15rem;
+
+  font-weight: 600;
+
+  margin-bottom: 12px;
+
+  position: relative;
+}
+
+.project-section h3::after {
+  content: "";
+
+  display: block;
+
+  width: 40px;
+  height: 2px;
+
+  margin-top: 6px;
+
+  background: #00e5ff;
+}
+
+/* ==================================================
+   TECH STACK
+================================================== */
+
+.tech-stack-list,
+.achievement-list {
+  padding-left: 18px;
+}
+
+.tech-stack-list li,
+.achievement-list li {
+  color: #c9c9c9;
+
+  margin-bottom: 8px;
+
+  line-height: 1.6;
+}
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.github-btn {
+  margin-top: auto;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0px;
+
+  width: fit-content;
+
+  padding: 5px 10px;
+
+  background: white;
+
+  border-radius: 14px;
+
+  font-weight: 60;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.github-btn:hover {
+  transform: translateY(-3px);
+
+  background: #8a63ff;
+
+  color: white;
+
+  box-shadow:
+    0 0 12px rgba(138, 99, 255, 0.5),
+    0 0 24px rgba(138, 99, 255, 0.3);
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-badge {
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  background: rgba(0, 229, 255, 0.12);
+
+  border: 1px solid rgba(0, 229, 255, 0.25);
+
+  color: #dffcff;
+
+  font-size: 0.85rem;
+}

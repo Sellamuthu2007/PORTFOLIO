@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Navbar from "./componenets/navbar";
+import Footer from "./componenets/footer";
 export default function Achievement() {
   const hackDetails = [
     {

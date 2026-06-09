@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./index.css";
+import "../styles/index.css";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -20,6 +20,9 @@ export default function Navbar() {
               <a onClick={() => navigate("/projects")}>Projects</a>
             </li>
             <li>
+              <a onClick={() => navigate("/skills")}>Skills</a>
+            </li>
+            <li>
               <a onClick={() => navigate("/hackathons")}>Achievements</a>
             </li>
             <li>
@@ -33,9 +36,6 @@ export default function Navbar() {
             </li>
             <li>
               <a href="#home">Internships</a>
-            </li>
-            <li>
-              <a href="#home">Contact</a>
             </li>
             <li>
               <a href="./RESUME.pdf">Resume</a>
