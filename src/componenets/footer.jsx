@@ -10,7 +10,7 @@ export default function Footer() {
         }}
       >
         <p>
-          Developed with ❤️ by <span class="hot-name">Sellamuthu R</span>
+          Developed with ❤️ by <span className="hot-name">Sellamuthu R</span>
         </p>
       </footer>
     </>

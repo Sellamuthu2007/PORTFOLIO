@@ -9,7 +9,6 @@ import ScrollStack, {
 } from '../componenets/reactbits/scrollStack'
 
 import "../styles/educations.css";
-import { fromTheme } from "tailwind-merge";
 
 const educationData = [
   {

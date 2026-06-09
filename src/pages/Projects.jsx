@@ -7,7 +7,7 @@ import Footer from "../componenets/footer";
 const Projects = () => {
   return (
     <div
-      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+      style={{ display: "flex", flexDirection: "column", minHeight: "100vh", paddingTop: "100px" }}
     >
       <Navbar />
 
