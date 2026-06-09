@@ -20,6 +20,9 @@ export default function Navbar() {
               <a onClick={() => navigate("/projects")}>Projects</a>
             </li>
             <li>
+              <a onClick={() => navigate("/hackathons")}>Skills</a>
+            </li>
+            <li>
               <a onClick={() => navigate("/hackathons")}>Achievements</a>
             </li>
             <li>
@@ -33,9 +36,6 @@ export default function Navbar() {
             </li>
             <li>
               <a href="#home">Internships</a>
-            </li>
-            <li>
-              <a href="#home">Contact</a>
             </li>
             <li>
               <a href="./RESUME.pdf">Resume</a>

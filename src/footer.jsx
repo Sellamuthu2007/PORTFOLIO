@@ -5,8 +5,8 @@ export default function Footer() {
         style={{
           color: "white",
           fontSize: "20px",
-          marginLeft: "600px",
-          marginTop: "50px",
+          marginLeft: "550px",
+          marginTop: "20px",
         }}
       >
         <p>

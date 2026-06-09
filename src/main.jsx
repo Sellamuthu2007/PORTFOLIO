@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
-import Projects from "./projects.jsx";
+import Projects from "../src/pages/Projects";
 import Homepage from "./home.jsx";
 import Notfound from "./notfound.jsx";
 import Achievement from "./achievements.jsx";

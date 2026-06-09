@@ -99,13 +99,12 @@
   padding: 10px;
 }
 
-.homePage-left-down{
-    display : flex;
-    flex-direction: row;
-    gap : 50px;
-    margin-top: 60px;
-    font-size: 22px;
-    
+.homePage-left-down {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 150px;
+  font-size: 20px;
 }
 .homePage-right img {
   margin-top: 90px;
@@ -121,34 +120,6 @@
 .homePage-right {
   position: relative;
   z-index: 1;
-}
-
-.scroll-down-btn {
-  position: absolute;
-  /* Centered horizontally, positioned 30px above bottom */
-  left: 50%;
-  bottom: 30px;
-  transform: translateX(-50%);
-  z-index: 2;
-  padding: 12px 28px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 999px;
-  background: rgba(12, 16, 34, 0.45);
-  color: #ffffff;
-  font-size: 18px;
-  letter-spacing: 0.4px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  transition:
-    transform 0.25s ease,
-    background 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.scroll-down-btn:hover {
-  transform: translateX(-50%) translateY(-2px);
-  background: rgba(0, 231, 255, 0.16);
-  box-shadow: 0 0 18px rgba(0, 231, 255, 0.45);
 }
 
 .homePage-right img:hover {
@@ -180,18 +151,7 @@
   width: 100%;
   color: white;
 }
-.homePage-down i {
-  color: white;
-  font-size: 100px;
-}
 
-.mass-container {
-  width: 100%;
-  display: flex;
-}
-.homePage-down h3 {
-  margin-top: 20px;
-}
 .container {
   /* position : fixed; */
   padding: 15px;

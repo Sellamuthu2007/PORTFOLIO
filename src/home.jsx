@@ -49,7 +49,6 @@ export default function Homepage() {
                     "Hai Everyone.",
                     "Create, rise and lead.",
                     "Hello, tech world.",
-                    
                   ]}
                   typingSpeed={75}
                   pauseDuration={1500}
@@ -67,14 +66,24 @@ export default function Homepage() {
                   cursorBlinkDuration={0.5}
                 />
               </div>
-              <div style = {{"marginTop" : "20px"}}>
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5 }}
+                style={{ marginTop: "20px" }}
+              >
                 <h2>I'm Sellamuthu R</h2>
-                <h4 style = {{"marginTop" : "20px"}}>
+                <h4 style={{ marginTop: "20px" }}>
                   An aspiring SDE , student at Chennai Institute of Technology
                   with good communication and strong technical skills.
                 </h4>
-              </div>
-              <div className="homePage-left-down">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5 }}
+                className="homePage-left-down"
+              >
                 <div>
                   <a
                     download="Sella_Resume"
@@ -109,12 +118,12 @@ export default function Homepage() {
                   ></a>{" "}
                   Email
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="homePage-right   rounded-circle">
               <motion.img
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.5 }}
                 whileHover={{ scale: 1.05 }}
                 src={person}
@@ -122,137 +131,11 @@ export default function Homepage() {
               />
             </div>
           </div>
-          <div className="homePage-down" id="homePage-down">
-            <div>
-              <h3>About me</h3>
-            </div>
-            <div className="mass-container">
-              <div className="container">
-                <div>
-                  <i class="bi bi-code-slash"></i>
-                </div>
-                <div>
-                  <p>
-                    I enjoy transforming ideas into efficient, scalable code. I
-                    focus on writing clean logic, optimizing performance, and
-                    building solutions that solve real-world problems using
-                    modern technologies.
-                  </p>
-                </div>
-              </div>
-              <div className="container">
-                <div>
-                  <i class="bi bi-braces"></i>
-                </div>
-                <div>
-                  <p>
-                    My academic journey strengthened my foundations in computer
-                    science, problem-solving, and system thinking, enabling me
-                    to bridge theoretical concepts with practical software
-                    development.
-                  </p>
-                </div>
-              </div>
-              <div className="container">
-                <div>
-                  <i class="bi bi-journal"></i>
-                </div>
-                <div>
-                  <p>
-                    I approach challenges with a structured mindset—analyzing
-                    requirements, breaking down problems, and delivering
-                    reliable solutions through algorithms and thoughtful design.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="mass-container">
-              <div className="container">
-                <div>
-                  <i class="bi bi-activity"></i>
-                </div>
-                <div>
-                  <p>
-                    I am deeply passionate about software engineering,
-                    continuously learning new technologies, exploring system
-                    architectures, and improving my skills to build impactful
-                    digital products.
-                  </p>
-                </div>
-              </div>
-              <div className="container">
-                <div>
-                  <i class="bi bi-pencil-square"></i>
-                </div>
-                <div>
-                  <p>
-                    Beyond coding, I enjoy exploring technology trends, learning
-                    through hands-on projects, and maintaining a balance through
-                    creative thinking and personal growth activities.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div>
+            <Footer />
           </div>
-          <button
-              type="button"
-              className="scroll-down-btn"
-              onClick={() =>
-                document
-                  .getElementById("homePage-down")
-                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
-              }
-            >
-              Scroll down
-            </button>
-            
         </div>
-        <Footer />
       </div>
     </>
   );
-}
-
-{
-  /* <motion.h2
-                            initial = {{opacity : 0 , x : 10}}
-                            animate = {{opacity : 1, x: 0}}
-                            transition = {{
-                                duration: 0.6,
-                                delay:   0.3, 
-                                type: "spring",
-                                stiffness: 80,
-                            }}
-                            
-                        >Hello Everyone! I am
-                        </motion.h2>
-                        <motion.h1
-                            initial = {{opacity : 0 , x : 20}}
-                            animate = {{opacity : 1, x : 0}}
-                            transition = {{
-                                delay : 1.6,
-                                duration : 0.5,
-                                type: "spring",
-                                stiffness: 80,
-                            }}
-                        > Sellamuthu R</motion.h1>
-                        <motion.h3
-                            initial = {{opacity : 0, x : 20}}
-                            animate = {{opacity : 1, x : 0}}
-                            transition = {{
-                                duration : 0.5,
-                                delay : 2.6,
-                                type : "spring",
-                                stiffness: 80,
-                            }}
-                        >An  Aspiring  Software  development  Enginner,  Fullstack  Developer, with good  knowledge  in  Artificial  Intelligence, cloud  computing  and  academia.</motion.h3>
-                        <motion.div className="icons"
-                            initial = {{opacity : 0, x : 20}}
-                            animate = {{opacity : 1 , x : 0}}
-                            transition = {{duration : 0.6,
-                                delay : 3.6
-                            }}
-                        >
-                            
-                        </motion.div> */
 }
