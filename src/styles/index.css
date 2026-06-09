@@ -6,58 +6,98 @@
 @custom-variant dark (&:is(.dark *));
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
   font-family: "Times New Roman", Times, serif;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
   background: linear-gradient(
     180deg,
     #0f0a25,
-    /* top purple tint */ #0c1022,
-    /* center deep blue */ #0d1228 /* bottom navy */
+    #0c1022,
+    #0d1228
   );
-  cursor: pointer;
+
+  color: white;
+
+  overflow-x: hidden;
 }
 
+a,
+button,
+.project-card,
+.skill-card,
+.edu-terminal {
+  cursor: pointer;
+}
 .homePage-right img:hover {
   transform: scale(2);
   transition: 0.3s ease;
 }
 .nav1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   background-color: black;
   color: white;
-  margin-top: 10px;
-  margin-left: 10px;
-  display: flex;
+  margin: 10px;
+  padding: 6px 20px 6px 0;
   border-radius: 120px;
-  border: white solid 5px;
+  border: 5px solid white;
+  overflow: hidden;
+  
 }
+
 .logo {
   font-size: 22px;
-  margin-left: 30px;
-  margin-top: 10px;
-  border-radius: 120px;
   font-family: cursive;
   cursor: pointer;
-}
-.menu {
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 0 24px;
   border-radius: 120px;
-}
-.menu ul {
-  margin-left: 10px;
-  display: flex;
 }
 
-.menu ul li {
-  border-radius: 120px;
-  margin-top: 10px;
-  margin-left: 45px;
-  list-style: none;
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.menu ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-shrink: 0;
+}
+
 .menu ul li a {
-  border-radius: 120px;
   text-decoration: none;
   color: white;
-
-  font-size: 20px;
+  font-size: 18px;
+  white-space: nowrap;
   cursor: pointer;
+  display: block;
+  padding: 8px 0;
+  border-radius: 120px;
 }
 .err-img {
   position: fixed;
@@ -162,42 +202,6 @@
   border: 3px transparent solid;
   border-radius: 50px;
   transition: border-color 0.3s ease;
-}
-.hackathonPage {
-  margin-left: 400px;
-  margin-right: 400px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  color: white;
-}
-.hackathonPage div {
-  border-radius: 20px;
-}
-
-.hackathonPage-box {
-  border-radius: 20px;
-  height: 300px;
-  margin-top: 30px;
-  background: linear-gradient(
-    180deg,
-    #0f0a25,
-    /* top purple tint */ #0c1022,
-    /* center deep blue */ #0d1228 /* bottom navy */
-  );
-  display: flex;
-  flex-direction: column;
-  border: 3px solid #00e7ff;
-  cursor: pointer;
-}
-.hackathonPage-box:hover {
-  box-shadow: 0 0 30px #00e7ff;
-  transform: scale(1.05);
-}
-.hackathonPage-box div {
-  margin-left: 10px;
-  margin-top: 10px;
 }
 .education-box {
   margin-top: 30px;

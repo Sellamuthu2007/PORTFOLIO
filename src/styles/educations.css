@@ -1,0 +1,328 @@
+/* ==========================================
+   EDUCATION PAGE
+========================================== */
+
+.education-page {
+  min-height: 100vh;
+
+  padding: 70px 40px;
+
+  color: white;
+}
+
+.education-title {
+  text-align: center;
+
+  font-size: 2rem;
+  font-family :Arial, Helvetica, sans-serif; 
+  font-weight: 700;
+
+  margin-bottom: 60px;
+}
+
+/* ==========================================
+   EDUCATION GRID
+========================================== */
+
+.education-grid {
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(450px, 1fr));
+
+  gap: 35px;
+}
+
+/* ==========================================
+   MAC TERMINAL CARD
+========================================== */
+
+.edu-terminal {
+  width: 70%;
+
+  background: #0b0b0b;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+  margin-left : 165px;
+  border: 1px solid #1f1f1f;
+
+  transition: all .3s ease;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.5),
+    inset 0 1px rgba(255,255,255,.05);
+}
+
+.edu-terminal:hover {
+  transform: translateY(-8px);
+
+  
+}
+
+/* ==========================================
+   TERMINAL HEADER
+========================================== */
+
+.terminal-header {
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding-left: 18px;
+
+  background: #151515;
+
+  border-bottom: 1px solid #242424;
+}
+
+.red,
+.yellow,
+.green {
+  width: 13px;
+  height: 13px;
+
+  border-radius: 50%;
+}
+
+.red {
+  background: #ff5f56;
+}
+
+.yellow {
+  background: #ffbd2e;
+}
+
+.green {
+  background: #27c93f;
+}
+
+/* ==========================================
+   TERMINAL BODY
+========================================== */
+
+.terminal-body {
+  padding: 28px;
+}
+
+/* ==========================================
+   TERMINAL COMMAND
+========================================== */
+
+.terminal-command {
+  color: #22c55e;
+
+  font-family: "Courier New", monospace;
+
+  margin-bottom: 24px;
+
+  font-size: 0.95rem;
+}
+
+.prompt {
+  margin-right: 8px;
+}
+
+/* ==========================================
+   INSTITUTION HEADER
+========================================== */
+
+.institution-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  color: #38bdf8;
+
+  font-size: 1.05rem;
+
+  font-weight: 600;
+}
+
+.grad-icon {
+  color: #facc15;
+
+  font-size: 1.4rem;
+
+  flex-shrink: 0;
+}
+
+/* ==========================================
+   DEGREE TITLE
+========================================== */
+
+.degree-title {
+  color: white;
+
+  font-size: 1.35rem;
+
+  font-weight: 700;
+
+  line-height: 1.5;
+
+  margin-bottom: 18px;
+}
+
+/* ==========================================
+   META INFORMATION
+========================================== */
+
+.education-meta {
+  display: flex;
+
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  color: #9ca3af;
+
+  font-size: 0.95rem;
+
+  margin-bottom: 14px;
+}
+
+/* ==========================================
+   CGPA / PERCENTAGE
+========================================== */
+
+.education-score {
+  color: #22c55e;
+
+  font-weight: 700;
+
+  margin-bottom: 18px;
+
+  font-size: 1rem;
+}
+
+/* ==========================================
+   BULLET POINTS
+========================================== */
+
+.education-points {
+  padding-left: 20px;
+}
+
+.education-points li {
+  color: #d1d5db;
+
+  line-height: 1.8;
+
+  margin-bottom: 10px;
+
+  font-size: 0.95rem;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .education-page {
+    padding: 50px 20px;
+  }
+
+  .education-title {
+    font-size: 2.2rem;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .terminal-body {
+    padding: 22px;
+  }
+
+  .education-meta {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+.edu-terminal::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+
+}
+.education-points {
+  list-style: none;
+
+  padding-left: 0;
+}
+
+.education-points li {
+  position: relative;
+
+  padding-left: 30px;
+
+  margin-bottom: 12px;
+
+  line-height: 1.8;
+
+  color: #d1d5db;
+}
+
+.education-points li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 0;
+
+  color: #22c55e;
+
+  font-weight: 700;
+
+  font-size: 1rem;
+}
+
+/* ==========================================
+   SCROLL STACK
+========================================== */
+
+.scroll-stack-scroller {
+  width: 100%;
+}
+
+.scroll-stack-inner {
+  padding: 20px 0 20px;
+}
+
+.scroll-stack-card-wrapper {
+  position: sticky;
+
+  top: 100px;
+
+  margin-bottom: 40px;
+}
+
+.scroll-stack-card {
+  transform-origin: top center;
+
+  width: min(1100px, 92vw);
+
+  margin: auto;
+}
