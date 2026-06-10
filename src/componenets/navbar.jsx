@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "../styles/index.css";
+import "../styles/navbar.css";
 
 export default function Navbar() {
   const navigate = useNavigate();

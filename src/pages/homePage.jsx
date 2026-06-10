@@ -5,7 +5,8 @@ import person from "../assets/My_Photo.png";
 import Navbar from "../componenets/navbar";
 import TextType from "../componenets/reactbits/TextType";
 
-import "../styles/index.css";
+import "../styles/global.css";
+import "../styles/homePage.css";
 import "../componenets/reactbits/TextType.css";
 
 export default function Homepage() {
