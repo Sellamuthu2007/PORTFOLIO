@@ -9,15 +9,27 @@ export default function Navbar() {
       <h3 className="logo">Sellamuthu R</h3>
       <div className="menu">
         <ul>
-          <li><a onClick={() => navigate("/")}>Home</a></li>
-          <li><a onClick={() => navigate("/projects")}>Projects</a></li>
-          <li><a onClick={() => navigate("/skills")}>Skills</a></li>
-          <li><a onClick={() => navigate("/hackathons")}>Achievements</a></li>
-          <li><a onClick={() => navigate("/educations")}>Education</a></li>
-          <li><a href="#home">Certificates</a></li>
-          <li><a href="#home">Volunteering</a></li>
-          <li><a href="#home">Internships</a></li>
-          <li><a href="./RESUME.pdf">Resume</a></li>
+          <li>
+            <a onClick={() => navigate("/")}>Home</a>
+          </li>
+          <li>
+            <a onClick={() => navigate("/projects")}>Projects</a>
+          </li>
+          <li>
+            <a onClick={() => navigate("/skills")}>Skills</a>
+          </li>
+          <li>
+            <a onClick={() => navigate("/hackathons")}>Achievements</a>
+          </li>
+          <li>
+            <a onClick={() => navigate("/educations")}>Education</a>
+          </li>
+          <li>
+            <a onClick={() => navigate("/experience")}>Experience</a>
+          </li>
+          <li>
+            <a href="./RESUME.pdf">Resume</a>
+          </li>
         </ul>
       </div>
     </nav>

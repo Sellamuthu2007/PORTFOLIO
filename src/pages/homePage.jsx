@@ -6,11 +6,9 @@ import Navbar from "../componenets/navbar";
 import TextType from "../componenets/reactbits/TextType";
 
 import "../styles/index.css";
-import "../styles/App.css";
 import "../componenets/reactbits/TextType.css";
 
 export default function Homepage() {
-
   return (
     <>
       <div>
@@ -22,7 +20,7 @@ export default function Homepage() {
             <div className="homePage-left" style={{ marginTop: "130px" }}>
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x : 0 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 style={{ marginTop: "20px" }}
               >
@@ -42,7 +40,7 @@ export default function Homepage() {
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x : 0 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 style={{ marginTop: "20px" }}
               >

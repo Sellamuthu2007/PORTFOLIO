@@ -3,9 +3,7 @@ import React from "react";
 export const ScrollStackItem = ({ children }) => {
   return (
     <div className="scroll-stack-card-wrapper">
-      <div className="scroll-stack-card">
-        {children}
-      </div>
+      <div className="scroll-stack-card">{children}</div>
     </div>
   );
 };

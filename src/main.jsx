@@ -2,13 +2,13 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-
 import Projects from "../src/pages/Projects";
 import Homepage from "./pages/homePage.jsx";
 import Notfound from "./componenets/notfound.jsx";
 import Achievement from "./pages/achievements.jsx";
 import Skills from "./pages/Skills.jsx";
 import Education from "./pages/educations";
+import Experience from "./pages/experience";
 
 const urls = createBrowserRouter([
   {
@@ -31,6 +31,10 @@ const urls = createBrowserRouter([
   {
     path: "/skills",
     element: <Skills />,
+  },
+  {
+    path: "/experience",
+    element: <Experience />,
   },
 ]);
 createRoot(document.getElementById("root")).render(

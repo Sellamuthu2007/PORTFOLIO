@@ -1,5 +1,5 @@
-*{
-    font-family: "Geist Variable", sans-serif;
+* {
+  font-family: "Geist Variable", sans-serif;
 }
 .skills-page {
   max-width: 1400px;
@@ -10,10 +10,12 @@
 .skills-title {
   text-align: center;
   color: white;
+  font-family: "Courier New", Courier, monospace;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 50px;
   padding-bottom: 12px;
+  margin-top: 5px;
   display: inline-block;
   width: 100%;
   text-decoration: none;
@@ -41,7 +43,7 @@
 
 .skill-section h2 {
   color: white;
-  
+  font-family: monospace;
   font-size: 2rem;
   margin-bottom: 30px;
 }
@@ -71,7 +73,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  font-family: "Courier New", Courier, monospace;
   border: 1px solid rgba(0, 229, 255, 0.08);
   transition: all 0.3s ease;
 }
@@ -89,82 +91,9 @@
   font-weight: 500;
 }
 
-/* ==================================================
-   BRAND COLORS for skill icons
-   ================================================== */
-
-/* Programming Languages */
-.skill-section:nth-child(2) .skill-card:nth-child(1) .skill-icon {
-  color: #ed8b00;
-} /* Java */
-.skill-section:nth-child(2) .skill-card:nth-child(2) .skill-icon {
-  color: #3776ab;
-} /* Python */
-.skill-section:nth-child(2) .skill-card:nth-child(3) .skill-icon {
-  color: #f7df1e;
-} /* JavaScript */
-.skill-section:nth-child(2) .skill-card:nth-child(4) .skill-icon {
-  color: #00599c;
-} /* C++ */
-
-/* Frontend & Design */
-.skill-section:nth-child(3) .skill-card:nth-child(1) .skill-icon {
-  color: #e34f26;
-} /* HTML5 */
-.skill-section:nth-child(3) .skill-card:nth-child(2) .skill-icon {
-  color: #1572b6;
-} /* CSS3 */
-.skill-section:nth-child(3) .skill-card:nth-child(3) .skill-icon {
-  color: #61dafb;
-} /* React */
-.skill-section:nth-child(3) .skill-card:nth-child(4) .skill-icon {
-  color: #3178c6;
-} /* TypeScript */
-.skill-section:nth-child(3) .skill-card:nth-child(5) .skill-icon {
-  color: #cccccc;
-} /* Next.js */
-.skill-section:nth-child(3) .skill-card:nth-child(6) .skill-icon {
-  color: #7952b3;
-} /* Bootstrap */
-.skill-section:nth-child(3) .skill-card:nth-child(7) .skill-icon {
-  color: #06b6d4;
-} /* Tailwind */
-.skill-section:nth-child(3) .skill-card:nth-child(8) .skill-icon {
-  color: #f24e1e;
-} /* Figma */
-
-/* Backend */
-.skill-section:nth-child(4) .skill-card:nth-child(1) .skill-icon {
-  color: #339933;
-} /* Node.js */
-.skill-section:nth-child(4) .skill-card:nth-child(2) .skill-icon {
-  color: #aaaaaa;
-} /* Express */
-.skill-section:nth-child(4) .skill-card:nth-child(3) .skill-icon {
-  color: #44b78b;
-} /* Django */
-
-/* Database */
-.skill-section:nth-child(5) .skill-card:nth-child(1) .skill-icon {
-  color: #47a248;
-} /* MongoDB */
-.skill-section:nth-child(5) .skill-card:nth-child(2) .skill-icon {
-  color: #4479a1;
-} /* MySQL */
-.skill-section:nth-child(5) .skill-card:nth-child(3) .skill-icon {
-  color: #4169e1;
-} /* PostgreSQL */
-
-/* Tools */
-.skill-section:nth-child(6) .skill-card:nth-child(1) .skill-icon {
-  color: #f05032;
-} /* Git */
-.skill-section:nth-child(6) .skill-card:nth-child(2) .skill-icon {
-  color: #cccccc;
-} /* GitHub */
-.skill-section:nth-child(6) .skill-card:nth-child(3) .skill-icon {
-  color: #2496ed;
-} /* Docker */
-.skill-section:nth-child(6) .skill-card:nth-child(4) .skill-icon {
-  color: #ff6c37;
-} /* Postman */
+.skill-icon {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 2px transparent);
+}
