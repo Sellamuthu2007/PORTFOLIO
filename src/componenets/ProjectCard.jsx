@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/projects.css";
 
 const ProjectCard = ({
   title,
@@ -26,34 +27,19 @@ const ProjectCard = ({
         <section className="project-section">
           <h3>Tech Stack</h3>
 
-          <div className="tech-badges">
+          <ul className="tech-stack-list">
             {techStack.map((tech) => (
-              <span className="tech-badge" key={tech}>
-                {tech}
-              </span>
+              <li key={tech}>{tech}</li>
             ))}
-          </div>
+          </ul>
         </section>
-
-        {achievements?.length > 0 && (
-          <section className="project-section">
-            <h3>Achievements</h3>
-
-            <ul className="achievement-list">
-              {achievements.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </section>
-        )}
-
         <a
           href={github || "#"}
           target="_blank"
           rel="noopener noreferrer"
           className="github-btn"
         >
-          <i className=" bi-github github-btn"></i>
+          <i className="bi-github"></i>
           View on GitHub
         </a>
       </div>

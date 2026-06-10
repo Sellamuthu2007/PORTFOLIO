@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaGraduationCap } from "react-icons/fa";
 
 import Navbar from "../componenets/navbar";
@@ -6,10 +7,9 @@ import Footer from "../componenets/footer";
 
 import ScrollStack, {
   ScrollStackItem,
-} from '../componenets/reactbits/scrollStack'
+} from "../componenets/reactbits/scrollStack";
 
 import "../styles/educations.css";
-import { fromTheme } from "tailwind-merge";
 
 const educationData = [
   {
@@ -70,15 +70,21 @@ const Education = () => {
       <Navbar />
 
       <div className="education-page">
-        <h1 className="education-title">
-          Education
-        </h1>
+        <h1 className="education-title">My Education</h1>
 
         <ScrollStack>
           {educationData.map((edu, index) => (
             <ScrollStackItem key={index}>
-              <div className="edu-terminal">
-
+              <motion.div
+                className="edu-terminal"
+                initial={{ opacity: 0, x: index % 2 === 0 ? -60 : 60 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  duration: 0.5,
+                  delay: index * 0.15,
+                  ease: "easeOut",
+                }}
+              >
                 <div className="terminal-header">
                   <span className="red"></span>
                   <span className="yellow"></span>
@@ -86,7 +92,6 @@ const Education = () => {
                 </div>
 
                 <div className="terminal-body">
-
                   <div className="terminal-command">
                     <span className="prompt">$</span>
                     fetch-education --latest
@@ -97,28 +102,22 @@ const Education = () => {
                     {edu.institution}
                   </div>
 
-                  <h2 className="degree-title">
-                    {edu.degree}
-                  </h2>
+                  <h2 className="degree-title">{edu.degree}</h2>
 
                   <div className="education-meta">
                     <span>{edu.duration}</span>
                     <span>{edu.location}</span>
                   </div>
 
-                  <div className="education-score">
-                    {edu.score}
-                  </div>
+                  <div className="education-score">{edu.score}</div>
 
                   <ul className="education-points">
                     {edu.points.map((point, idx) => (
-                      <li key={idx}>
-                        {point}
-                      </li>
+                      <li key={idx}>{point}</li>
                     ))}
                   </ul>
                 </div>
-              </div>
+              </motion.div>
             </ScrollStackItem>
           ))}
         </ScrollStack>

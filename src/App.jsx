@@ -1,11 +1,5 @@
-import Navbar from "./componenets/navbar";
-
 function App() {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+  return null;
 }
 
 export default App;

@@ -1,76 +1,59 @@
-import bg2 from "../assets/bg2.png";
+import imgAiforBharat from "../assets/AI-for-Bharat.png";
+import imgSOS from "../assets/bg2.png";
+import imgPortfolio from "../assets/portfolio.png";
 
 export const projectData = [
   {
-    title: "SilentSOS",
-    image: bg2,
+    title: "CCMS-AI",
+    image: imgAiforBharat,
 
     description:
-      "AI-powered emergency safety application that allows users to trigger SOS alerts silently through gesture recognition. The system automatically shares real-time location with emergency contacts and starts evidence collection through audio and video recording.",
+      "An enterprise-grade Gov-Tech solution engineered to handle complex, document-heavy public sector challenges. The platform leverages advanced natural language processing and custom deep learning pipelines to automate massive administrative workflows—such as parsing, analyzing, and verifying thousands of pages of multi-format government procurement tenders and citizen documents with ultra-low latency.",
 
     techStack: [
-      "React Native",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Geolocation API",
-      "TensorFlow Lite",
+      "Python",
+      "FastAPI",
+      "Next.js",
+      "TailwindCSS",
+      "Transformers",
+      "PyTorch",
+      "Docker",
+      "PostgreSQL",
     ],
-
-    achievements: [
-      "Developed for AIDC Challenge",
-      "Gesture-based silent emergency triggering",
-      "Automatic evidence collection system",
-    ],
-
-    github: "",
+    github: "https://github.com/Sellamuthu2007/AI-for-Bharat",
   },
   {
-    title: "SilentSOS",
-    image: bg2,
+    title: "DigiBank",
+    image: imgSOS,
 
     description:
-      "AI-powered emergency safety application that allows users to trigger SOS alerts silently through gesture recognition. The system automatically shares real-time location with emergency contacts and starts evidence collection through audio and video recording.",
-
+      "DigiBank is a blockchain-powered digital certificate banking platform that enables institutions to issue, manage, and verify academic and professional credentials securely.The platform leverages decentralized storage and blockchain verification to eliminate certificate forgery, reduce verification delays, and ensure privacy-controlled credential sharing.",
     techStack: [
-      "React Native",
+      "React.js",
+      "Tailwind CSS",
       "Node.js",
       "Express.js",
       "MongoDB",
-      "Geolocation API",
-      "TensorFlow Lite",
+      "JWT Authentication",
     ],
-
-    achievements: [
-      "Developed for AIDC Challenge",
-      "Gesture-based silent emergency triggering",
-      "Automatic evidence collection system",
-    ],
-
-    github: "",
+    github: "https://github.com/Sellamuthu2007/DigiBank",
   },
   {
-    title: "SilentSOS",
-    image: bg2,
+    title: "PORTFOLIO",
+    image: imgPortfolio,
 
     description:
-      "AI-powered emergency safety application that allows users to trigger SOS alerts silently through gesture recognition. The system automatically shares real-time location with emergency contacts and starts evidence collection through audio and video recording.",
-
+      "Personal Portfolio Website A high-performance, responsive portfolio platform engineered to showcase technical project metrics, hackathon achievements, and industry credentials. Built with a focus on web optimization, standard-compliant components, and automated code quality assurance, the project delivers a sleek, user-centric visual timeline for recruiters.",
     techStack: [
-      "React Native",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Geolocation API",
-      "TensorFlow Lite",
+      "React.js",
+      "Vite",
+      "Tailwind CSS",
+      "Bootstrap",
+      "ReactBites",
+      "ES Lint",
+      "Prettier",
+      "Framer Motion",
     ],
-
-    achievements: [
-      "Developed for AIDC Challenge",
-      "Gesture-based silent emergency triggering",
-      "Automatic evidence collection system",
-    ],
-
-    github: "",
+    github: "https://github.com/Sellamuthu2007/PORTFOLIO",
   },
 ];

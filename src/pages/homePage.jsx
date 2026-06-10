@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import Footer from "../componenets/footer";
@@ -6,13 +5,11 @@ import person from "../assets/My_Photo.png";
 import Navbar from "../componenets/navbar";
 import TextType from "../componenets/reactbits/TextType";
 
-import "../styles/index.css";
-import "../styles/App.css";
+import "../styles/global.css";
+import "../styles/homePage.css";
 import "../componenets/reactbits/TextType.css";
 
 export default function Homepage() {
-  const navigate = useNavigate();
-
   return (
     <>
       <div>
@@ -24,7 +21,7 @@ export default function Homepage() {
             <div className="homePage-left" style={{ marginTop: "130px" }}>
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x : 0 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 style={{ marginTop: "20px" }}
               >
@@ -38,27 +35,19 @@ export default function Homepage() {
                   pauseDuration={1500}
                   showCursor
                   cursorCharacter="_"
-                  texts={[
-                    "Rise, shine, and create.",
-                    "Hello, tech world.",
-                    "Build some amazing experiences!",
-                  ]}
                   deletingSpeed={50}
-                  variableSpeedEnabled={false}
-                  variableSpeedMin={60}
-                  variableSpeedMax={120}
                   cursorBlinkDuration={0.5}
                 />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x : 0 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 style={{ marginTop: "20px" }}
               >
-                <h2>I'm Sellamuthu R</h2>
+                <h2>I&apos;m Sellamuthu R</h2>
                 <h4 style={{ marginTop: "20px" }}>
-                  An aspiring SDE , student at Chennai Institute of Technology
+                  An aspiring SDE, student at Chennai Institute of Technology
                   with good communication and strong technical skills.
                 </h4>
               </motion.div>
@@ -80,7 +69,7 @@ export default function Homepage() {
                 </div>
                 <div>
                   <a
-                    class="bi bi-linkedin"
+                    className="bi bi-linkedin"
                     style={{ color: "white" }}
                     href="https://www.linkedin.com/in/sellamuthu-ramu-3b3390327"
                   ></a>{" "}
@@ -88,7 +77,7 @@ export default function Homepage() {
                 </div>
                 <div>
                   <a
-                    class="bi bi-github"
+                    className="bi bi-github"
                     style={{ color: "white" }}
                     href="https://github.com/Sellamuthu2007"
                   ></a>{" "}
@@ -96,7 +85,7 @@ export default function Homepage() {
                 </div>
                 <div>
                   <a
-                    class="bi bi-envelope"
+                    className="bi bi-envelope"
                     style={{ color: "white" }}
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=krssellamuthu2007@gmail.com"
                   ></a>{" "}

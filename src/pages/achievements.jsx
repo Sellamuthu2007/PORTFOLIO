@@ -1,53 +1,60 @@
 import { motion } from "framer-motion";
-import { FaTrophy, FaMedal, FaCalendarAlt, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaTrophy, FaCalendarAlt } from "react-icons/fa";
 import Navbar from "../componenets/navbar";
 import Footer from "../componenets/footer";
 import "../styles/achievements.css";
 
-const achievementIcons = FaTrophy;
+import imgIdeathon from "../assets/experience/Ideathon.png";
+import imgTechsprint from "../assets/experience/Techsprint.png";
+import imgTesco from "../assets/tesco.png";
+import imgCSIC from "../assets/CSIC.png";
 
-const hackDetails = [
+const achievementData = [
   {
     id: 1,
-    name: "All India Developers Challenge (AIDC)",
+    name: "CSIC - National Finalist Top 50",
+    date: "6 Feb 2026",
     description:
-      "Competed in a national-level development challenge organized by SATI, Vidisha, solving real-world problems through innovative software solutions.",
-    date: "15 March 2025",
-    achievement: "Shortlisted to Pre-Final Round",
-    github: "",
-    linkedin: "",
+      "Engineered a high-security, automated e-KYC verification engine utilizing cryptographic key pairs and secure data hashing to ensure zero-trust identity authentication.Advanced to the elite Top 50 national teams in a prestigious cybersecurity challenge backed by the Data Security Council of India (DSCI) and the Government of India.",
+    image: imgCSIC,
   },
   {
     id: 2,
-    name: "Retail Media Hackathon",
+    name: "TESCO - Retail Media Hackathon National Finalist",
     description:
-      "Participated in a corporate hackathon by Tesco Retail Media, focusing on building data-driven retail media solutions.",
-    date: "22 April 2025",
-    achievement: "Shortlisted to Final Round",
-    github: "",
-    linkedin: "",
+      "Participated in a corporate hackathon by Tesco Retail Media, focusing on building data-driven retail media solutions.Engineered a visual canvas workspace supporting complex image manipulation, background removal, custom color palette storage, and multi-channel asset export presets under 500KB.",
+    image: imgTesco,
+    date: "26 Nov 2025",
+    linkedIn: "",
   },
   {
     id: 3,
-    name: "Google Developers Challenge",
+    name: "Ideathon - IIIT Kancheepuram National Finalist",
+    date: "31 Jan 2026",
     description:
-      "Engaged in Google's developer challenge, solving algorithmic and system design problems across multiple rounds.",
-    date: "10 June 2025",
-    achievement: "Participation in Round 1",
-    github: "",
-    linkedin: "",
+      "Advanced to the grand final round as a top team, competing in a fierce national pool of 100+ registered groups.Collaborated within team SILVERSHADE to conceptualize, design, and pitch an innovative tech solution under intense hackathon constraints.",
+    image: imgIdeathon,
+    linkedIn:
+      "https://www.linkedin.com/posts/sellamuthu-ramu-3b3390327_ideathon-esummit-silvershade-activity-7424508097022550016-2Xx4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJ1rzcBUnorXEiaOA1YBoM-x1-tSzeE5zU",
   },
   {
     id: 4,
-    name: "Google Developers Challenge",
+    name: "GDG - Techsprint Top 5th Finalist",
     description:
-      "Second edition of the Google Developers Challenge, tackling advanced problem sets and demonstrating technical proficiency.",
-    date: "18 August 2025",
-    achievement: "Participation in Round 1",
-    github: "",
-    linkedin: "",
+      "Secured 5th place overall out of 300+ initial national project submissions, surviving a brutal cut to the top 50 for the live, in-person finals.Co-developed PriceFixer AI with team SILVERSHADE, engineering a rapid, full-stack prototype designed to solve critical, real-world societal issues.",
+    date: "20 Jan 2025",
+    image: imgTechsprint,
+    linkedIn:
+      "https://www.linkedin.com/posts/sellamuthu-ramu-3b3390327_techsprint-gdg-hackathon-activity-7419719683534282752-TIX5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJ1rzcBUnorXEiaOA1YBoM-x1-tSzeE5zU",
   },
 ];
+
+function splitBullets(text) {
+  return text
+    .split(".")
+    .map((s) => s.trim())
+    .filter((s) => s.length > 0);
+}
 
 export default function Achievement() {
   return (
@@ -57,8 +64,8 @@ export default function Achievement() {
         <h1 className="achievements-title">My Achievements</h1>
 
         <div className="achievements-list">
-          {hackDetails.map((details, index) => {
-            const Icon = achievementIcons;
+          {achievementData.map((details, index) => {
+            const bullets = splitBullets(details.description);
 
             return (
               <motion.div
@@ -73,48 +80,53 @@ export default function Achievement() {
                 }}
                 whileHover={{ scale: 1.01 }}
               >
-                <div className="achievement-icon-wrapper">
-                  <Icon />
+                <div className="achievement-header">
+                  <div className="achievement-header-left">
+                    <FaTrophy className="achievement-cup" />
+                    <h2 className="achievement-name">{details.name}</h2>
+                  </div>
+                  <div className="achievement-date">
+                    <FaCalendarAlt className="achievement-cal-icon" />
+                    <span>{details.date}</span>
+                  </div>
                 </div>
 
                 <div className="achievement-body">
-                  <h2 className="achievement-name">{details.name}</h2>
-
-                  <div className="achievement-date">
-                    <FaCalendarAlt />
-                    <span>{details.date}</span>
+                  <div className="achievement-image-col">
+                    {details.image ? (
+                      <img
+                        src={details.image}
+                        alt={details.name}
+                        className="achievement-snapshot"
+                        onClick={() =>
+                          details.linkedIn &&
+                          window.open(details.linkedIn, "_blank")
+                        }
+                      />
+                    ) : (
+                      <div className="achievement-image-placeholder">
+                        <span>Project Snapshot</span>
+                      </div>
+                    )}
                   </div>
 
-                  <p className="achievement-description">
-                    {details.description}
-                  </p>
-
-                  <div className="achievement-footer">
-                    <span className="achievement-badge">
-                      <FaMedal />
-                      {details.achievement}
-                    </span>
-
-                    <div className="achievement-links">
+                  <div className="achievement-desc-col">
+                    <ul className="achievement-bullets">
+                      {bullets.map((point, i) => (
+                        <li key={i}>{point}.</li>
+                      ))}
+                    </ul>
+                    {details.linkedIn && (
                       <a
-                        href={details.github || "#"}
+                        href={details.linkedIn}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="achievement-link github"
-                        title="GitHub"
+                        className="achievement-linkedin-link"
                       >
-                        <FaGithub />
+                        <i class="bi bi-link link-icon"></i>View full post on
+                        LinkedIn
                       </a>
-                      <a
-                        href={details.linkedin || "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="achievement-link linkedin"
-                        title="LinkedIn"
-                      >
-                        <FaLinkedin />
-                      </a>
-                    </div>
+                    )}
                   </div>
                 </div>
               </motion.div>
@@ -123,9 +135,7 @@ export default function Achievement() {
         </div>
       </div>
 
-      <div style={{ padding: "20px" }}>
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+@custom-variant dark (&:is(.dark *));
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #0f0a25, #0c1022, #0d1228);
+
+  color: white;
+
+  overflow-x: hidden;
+}
+
+a,
+button,
+.project-card,
+.skill-card,
+.edu-terminal {
+  cursor: pointer;
+}
+
+.err-img {
+  position: fixed;
+  background-color: black;
+  height: 700px;
+  width: 800px;
+}

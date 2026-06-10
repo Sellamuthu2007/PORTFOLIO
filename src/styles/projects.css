@@ -8,6 +8,34 @@
   color: white;
 }
 
+.projects-title {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 60px;
+  padding-bottom: 14px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.projects-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 3px;
+  background: #00e5ff;
+  box-shadow:
+    0 0 10px #00e5ff,
+    0 0 20px #00e5ff;
+  border-radius: 2px;
+}
+
 /* ==================================================
    PROJECT GRID
 ================================================== */
@@ -23,6 +51,10 @@
 
   max-width: 1500px;
   margin: auto;
+}
+
+.projects-grid > div {
+  height: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -47,35 +79,27 @@
   display: flex;
   flex-direction: column;
 
+  height: 100%;
+
   overflow: hidden;
 
-  border-radius: 22px;
+  border-radius: 9px;
 
-  background: linear-gradient(
-    180deg,
-    rgba(8, 12, 45, 0.95),
-    rgba(5, 7, 30, 0.98)
-  );
+  background: #0b0b0b;
 
-  border: 1px solid rgba(0, 229, 255, 0.18);
-
-  backdrop-filter: blur(16px);
+  border: 1px solid #1f1f1f;
 
   transition: all 0.35s ease;
-
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.25),
-    0 0 25px rgba(0, 229, 255, 0.05);
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-
-  border-color: #00e5ff;
+  border-color: rgba(0, 229, 255, 0.4);
 
   box-shadow:
-    0 0 25px rgba(0, 229, 255, 0.15),
-    0 0 60px rgba(0, 229, 255, 0.08);
+    0 0 20px rgba(0, 229, 255, 0.08),
+    0 8px 30px rgba(0, 0, 0, 0.3);
+
+  transform: translateY(-4px);
 }
 
 /* ==================================================
@@ -100,6 +124,8 @@
   overflow: hidden;
 
   position: relative;
+
+  border-bottom: 1px solid #1f1f1f;
 }
 
 .project-image-container::after {
@@ -126,7 +152,7 @@
 ================================================== */
 
 .project-content {
-  padding: 26px;
+  padding: 26px 28px;
 
   display: flex;
   flex-direction: column;
@@ -135,11 +161,13 @@
 }
 
 .project-title {
-  font-size: 2rem;
+  font-size: 1.2rem;
+
+  font-family: "Courier New", Courier, monospace;
 
   font-weight: 700;
 
-  color: white;
+  color: #00e5ff;
 
   margin-bottom: 16px;
 }
@@ -147,11 +175,11 @@
 .project-description {
   color: #d1d5db;
 
-  line-height: 1.8;
+  line-height: 1.7;
 
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
-  font-size: 0.98rem;
+  font-size: 0.88rem;
 }
 
 /* ==================================================
@@ -163,13 +191,13 @@
 }
 
 .project-section h3 {
-  color: white;
+  color: #e7e9ea;
 
-  font-size: 1.15rem;
-
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 600;
 
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 
   position: relative;
 }
@@ -183,26 +211,44 @@
   height: 2px;
 
   margin-top: 6px;
-
-  background: #00e5ff;
 }
 
 /* ==================================================
    TECH STACK
 ================================================== */
 
-.tech-stack-list,
-.achievement-list {
-  padding-left: 18px;
+.tech-stack-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.tech-stack-list li,
-.achievement-list li {
-  color: #c9c9c9;
+.tech-stack-list li {
+  color: #d1d5db;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  padding-left: 16px;
+  position: relative;
+}
 
-  margin-bottom: 8px;
+.tech-stack-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #00e5ff;
+  font-weight: 700;
+}
 
-  line-height: 1.6;
+.achievement-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* ==================================================
@@ -214,17 +260,19 @@
 
   display: inline-flex;
   align-items: center;
-  gap: 0px;
+  gap: 8px;
 
   width: fit-content;
 
-  padding: 5px 10px;
+  padding: 10px 20px;
 
   background: white;
 
   border-radius: 14px;
 
-  font-weight: 60;
+  font-weight: 600;
+
+  color: black;
 
   text-decoration: none;
 
@@ -232,8 +280,6 @@
 }
 
 .github-btn:hover {
-  transform: translateY(-3px);
-
   background: #8a63ff;
 
   color: white;
@@ -241,24 +287,4 @@
   box-shadow:
     0 0 12px rgba(138, 99, 255, 0.5),
     0 0 24px rgba(138, 99, 255, 0.3);
-}
-
-.tech-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.tech-badge {
-  padding: 6px 12px;
-
-  border-radius: 999px;
-
-  background: rgba(0, 229, 255, 0.12);
-
-  border: 1px solid rgba(0, 229, 255, 0.25);
-
-  color: #dffcff;
-
-  font-size: 0.85rem;
 }
