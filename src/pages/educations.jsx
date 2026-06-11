@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaGraduationCap } from "react-icons/fa";
 
-import Navbar from "../componenets/navbar";
-import Footer from "../componenets/footer";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 import ScrollStack, {
   ScrollStackItem,
-} from "../componenets/reactbits/scrollStack";
+} from "../components/reactbits/scrollStack";
 
 import "../styles/educations.css";
 
