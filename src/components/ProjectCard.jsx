@@ -1,13 +1,7 @@
 import React from "react";
 import "../styles/projects.css";
 
-const ProjectCard = ({
-  title,
-  image,
-  description,
-  techStack,
-  github,
-}) => {
+const ProjectCard = ({ title, image, description, techStack, github }) => {
   return (
     <article className="project-card">
       <div className="project-image-container">

@@ -10,33 +10,38 @@ import Skills from "./pages/Skills.jsx";
 import Education from "./pages/educations";
 import Experience from "./pages/experience";
 
-const urls = createBrowserRouter([
+const urls = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Homepage />,
+      errorElement: <Notfound />,
+    },
+    {
+      path: "/projects",
+      element: <Projects />,
+    },
+    {
+      path: "/hackathons",
+      element: <Achievement />,
+    },
+    {
+      path: "/educations",
+      element: <Education />,
+    },
+    {
+      path: "/skills",
+      element: <Skills />,
+    },
+    {
+      path: "/experience",
+      element: <Experience />,
+    },
+  ],
   {
-    path: "/",
-    element: <Homepage />,
-    errorElement: <Notfound />,
+    basename: "/PORTFOLIO", // 👈 THIS FIXES THE "NO ROUTES MATCHED" RECTIFIER EXCEPTION
   },
-  {
-    path: "/projects",
-    element: <Projects />,
-  },
-  {
-    path: "/hackathons",
-    element: <Achievement />,
-  },
-  {
-    path: "/educations",
-    element: <Education />,
-  },
-  {
-    path: "/skills",
-    element: <Skills />,
-  },
-  {
-    path: "/experience",
-    element: <Experience />,
-  },
-]);
+);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={urls} />
