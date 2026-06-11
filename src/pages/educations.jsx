@@ -7,7 +7,7 @@ import Footer from "../components/footer";
 
 import ScrollStack, {
   ScrollStackItem,
-} from "../components/reactbits/scrollStack";
+} from "../components/reactbits/ScrollStack";
 
 import "../styles/educations.css";
 
