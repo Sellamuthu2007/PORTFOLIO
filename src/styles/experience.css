@@ -204,4 +204,31 @@
   .experience-title {
     font-size: 2rem;
   }
+
+  .tweet-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .tweet-text {
+    font-size: 0.85rem;
+  }
+
+  .tweet-name {
+    font-size: 0.88rem;
+  }
+
+  .tweet-handle {
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-page {
+    padding: 70px 16px 40px;
+  }
+
+  .experience-grid {
+    gap: 20px;
+  }
 }
