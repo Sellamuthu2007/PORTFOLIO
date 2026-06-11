@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaTrophy, FaCalendarAlt } from "react-icons/fa";
-import Navbar from "../componenets/navbar";
-import Footer from "../componenets/footer";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import "../styles/achievements.css";
 
 import imgIdeathon from "../assets/experience/Ideathon.png";

@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 
-import Footer from "../componenets/footer";
+import Footer from "../components/footer";
 import person from "../assets/My_Photo.png";
-import Navbar from "../componenets/navbar";
-import TextType from "../componenets/reactbits/TextType";
+import Navbar from "../components/navbar";
+import TextType from "../components/reactbits/TextType";
 
 import "../styles/global.css";
 import "../styles/homePage.css";
-import "../componenets/reactbits/TextType.css";
+import "../components/reactbits/TextType.css";
 
 export default function Homepage() {
   return (

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import Navbar from "../componenets/navbar";
-import Footer from "../componenets/footer";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import {
   FaUserCircle,
   FaCheckCircle,

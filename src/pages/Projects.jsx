@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { projectData } from "../data/ProjectData";
-import ProjectCard from "../componenets/ProjectCard";
-import ErrorBoundary from "../componenets/ErrorBoundary";
-import Navbar from "../componenets/navbar";
-import Footer from "../componenets/footer";
+import ProjectCard from "../components/ProjectCard";
+import ErrorBoundary from "../components/ErrorBoundary";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import "../styles/projects.css";
 
 const Projects = () => {

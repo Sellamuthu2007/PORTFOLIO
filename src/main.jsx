@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Projects from "../src/pages/Projects";
 import Homepage from "./pages/homePage.jsx";
-import Notfound from "./componenets/notfound.jsx";
+import Notfound from "./components/notfound.jsx";
 import Achievement from "./pages/achievements.jsx";
 import Skills from "./pages/Skills.jsx";
 import Education from "./pages/educations";
