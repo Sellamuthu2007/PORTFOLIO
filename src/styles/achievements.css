@@ -186,6 +186,12 @@
   gap: 5px;
 }
 
+@media (max-width: 1024px) {
+  .achievements-page {
+    padding: 100px 60px 60px;
+  }
+}
+
 @media (max-width: 768px) {
   .achievements-page {
     padding: 80px 24px 60px;
@@ -203,6 +209,7 @@
 
   .achievement-name {
     white-space: normal;
+    font-size: 1rem;
   }
 
   .achievement-body {
@@ -215,5 +222,28 @@
 
   .achievements-title {
     font-size: 2rem;
+  }
+
+  .achievement-bullets li {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-page {
+    padding: 70px 16px 40px;
+  }
+
+  .achievement-card {
+    padding: 14px 12px;
+    border-radius: 12px;
+  }
+
+  .achievement-header-left {
+    gap: 8px;
+  }
+
+  .achievement-cup {
+    font-size: 1.1rem;
   }
 }

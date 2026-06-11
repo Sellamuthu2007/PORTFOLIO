@@ -18,5 +18,3 @@ The React Compiler is not enabled on this template because of its impact on dev 
 # PORTFOLIO
 
 A unified Portfolio website built using React that allows users to know about my professional journey.
-
-> > > > > > > 3545536e97bae04bbdcaa60ecf184856222af226

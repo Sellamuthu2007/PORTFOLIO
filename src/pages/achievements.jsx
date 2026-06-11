@@ -123,7 +123,7 @@ export default function Achievement() {
                         rel="noopener noreferrer"
                         className="achievement-linkedin-link"
                       >
-                        <i class="bi bi-link link-icon"></i>View full post on
+                        <i className="bi bi-link link-icon"></i>View full post on
                         LinkedIn
                       </a>
                     )}

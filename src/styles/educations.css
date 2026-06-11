@@ -1,7 +1,3 @@
-/* ==========================================
-   EDUCATION PAGE
-========================================== */
-
 .education-page {
   height: 100vh;
   padding: 100px 40px 0;
@@ -40,39 +36,22 @@
   border-radius: 2px;
 }
 
-/* ==========================================
-   EDUCATION GRID
-========================================== */
-
 .education-grid {
   max-width: 1400px;
-
   margin: 0 auto;
-
   display: grid;
-
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-
   gap: 35px;
 }
 
-/* ==========================================
-   MAC TERMINAL CARD
-========================================== */
-
 .edu-terminal {
   width: 70%;
-
   background: #0b0b0b;
-
   border-radius: 8px;
-
   overflow: hidden;
   margin-left: 165px;
   border: 1px solid #1f1f1f;
-
   transition: all 0.3s ease;
-
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.5),
     inset 0 1px rgba(255, 255, 255, 0.05);
@@ -82,22 +61,13 @@
   transform: translateY(-8px);
 }
 
-/* ==========================================
-   TERMINAL HEADER
-========================================== */
-
 .terminal-header {
   height: 50px;
-
   display: flex;
   align-items: center;
-
   gap: 10px;
-
   padding-left: 18px;
-
   background: #151515;
-
   border-bottom: 1px solid #242424;
 }
 
@@ -106,7 +76,6 @@
 .green {
   width: 13px;
   height: 13px;
-
   border-radius: 50%;
 }
 
@@ -122,25 +91,14 @@
   background: #27c93f;
 }
 
-/* ==========================================
-   TERMINAL BODY
-========================================== */
-
 .terminal-body {
   padding: 28px;
 }
 
-/* ==========================================
-   TERMINAL COMMAND
-========================================== */
-
 .terminal-command {
   color: #22c55e;
-
   font-family: "Courier New", monospace;
-
   margin-bottom: 24px;
-
   font-size: 0.95rem;
 }
 
@@ -148,87 +106,46 @@
   margin-right: 8px;
 }
 
-/* ==========================================
-   INSTITUTION HEADER
-========================================== */
-
 .institution-title {
   display: flex;
-
   align-items: center;
-
   gap: 12px;
-
   margin-bottom: 18px;
-
   color: #38bdf8;
-
   font-size: 1.05rem;
-
   font-weight: 600;
 }
 
 .grad-icon {
   color: #facc15;
-
   font-size: 1.4rem;
-
   flex-shrink: 0;
 }
 
-/* ==========================================
-   DEGREE TITLE
-========================================== */
-
 .degree-title {
   color: white;
-
   font-size: 1.35rem;
-
   font-weight: 700;
-
   line-height: 1.5;
-
   margin-bottom: 18px;
 }
-
-/* ==========================================
-   META INFORMATION
-========================================== */
 
 .education-meta {
   display: flex;
-
   justify-content: space-between;
-
   flex-wrap: wrap;
-
   gap: 10px;
-
   color: #9ca3af;
-
   font-size: 0.95rem;
-
   margin-bottom: 14px;
 }
 
-/* ==========================================
-   CGPA / PERCENTAGE
-========================================== */
-
 .education-score {
   color: #22c55e;
-
   font-weight: 700;
-
   margin-bottom: 18px;
-
   font-size: 1rem;
 }
-
-/* ==========================================
-   BULLET POINTS
-========================================== */
 
 .education-points {
   padding-left: 20px;
@@ -236,82 +153,40 @@
 
 .education-points li {
   color: #d1d5db;
-
   line-height: 1.8;
-
   margin-bottom: 10px;
-
   font-size: 0.95rem;
 }
 
-/* ==========================================
-   RESPONSIVE
-========================================== */
-
-@media (max-width: 768px) {
-  .education-page {
-    padding: 50px 20px;
-  }
-
-  .education-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .terminal-body {
-    padding: 22px;
-  }
-
-  .education-meta {
-    flex-direction: column;
-    gap: 0px;
-  }
-}
 .edu-terminal::before {
   content: "";
-
   position: absolute;
-
   top: 0;
   left: 0;
-
   width: 100%;
   height: 2px;
 }
 .education-points {
   list-style: none;
-
   padding-left: 0;
 }
 
 .education-points li {
   position: relative;
-
   padding-left: 30px;
-
   margin-bottom: 12px;
-
   line-height: 1.8;
-
   color: #d1d5db;
 }
 
 .education-points li::before {
   content: "✓";
-
   position: absolute;
-
   left: 0;
-
   color: #22c55e;
-
   font-weight: 700;
-
   font-size: 1rem;
 }
-
-/* ==========================================
-   SCROLL STACK
-========================================== */
 
 .scroll-stack-scroller {
   width: 100%;
@@ -331,16 +206,85 @@
 
 .scroll-stack-card-wrapper {
   position: sticky;
-
   top: 0;
-
   margin-bottom: 40px;
 }
 
 .scroll-stack-card {
   transform-origin: top center;
-
   width: min(1100px, 92vw);
-
   margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .edu-terminal {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-page {
+    padding: 50px 16px 0;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .terminal-body {
+    padding: 22px;
+  }
+
+  .education-meta {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .edu-terminal {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .education-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .institution-title {
+    font-size: 0.95rem;
+  }
+
+  .degree-title {
+    font-size: 1.1rem;
+  }
+
+  .education-meta {
+    font-size: 0.85rem;
+  }
+
+  .education-points li {
+    font-size: 0.85rem;
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-page {
+    padding: 40px 10px 0;
+  }
+
+  .edu-terminal {
+    width: 100%;
+  }
+
+  .terminal-body {
+    padding: 16px;
+  }
+
+  .terminal-command {
+    font-size: 0.8rem;
+  }
 }

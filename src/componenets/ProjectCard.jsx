@@ -6,7 +6,6 @@ const ProjectCard = ({
   image,
   description,
   techStack,
-  achievements,
   github,
 }) => {
   return (
